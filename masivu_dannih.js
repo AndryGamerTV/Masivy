@@ -1,4 +1,4 @@
-let fruits = ("Banana", "Mellon", "Apple", "Car");
+let fruits = ["Banana", "Mellon", "Apple", "Car"]; // Correct array initialization
 
 /*for (let fruit of fruits) {// ітерується по елементах масиву
   console.log( fruit );
@@ -45,4 +45,3 @@ let arr = [
 
 
 
-  
