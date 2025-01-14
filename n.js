@@ -1,3 +1,5 @@
-for (let i = 0; i < 2; i++) {
-    console.log("hello");
-}
+const log = console.log;
+log("helo");log(1 
+    + 3
+    -4
+    *4);log(2/2);
