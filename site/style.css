@@ -23,13 +23,14 @@ body {
         box-shadow: 2px 2px 2px #686868;
         font-size: 16px;
         display: block;
+        cursor: pointer;
       }
       button:hover{
         border: 2px solid rgb(108, 97, 97);
         background: rgb(193, 190, 190);
       }
       button:active {
-        background-color: green;
+        background-color: rgb(159, 182, 10);
         transform: translateY(4px);
         transition: 0.001s;
       }
