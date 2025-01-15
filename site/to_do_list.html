@@ -4,12 +4,15 @@
       <meta charset="UTF-8">
       <title>First file</title>
       <link rel="stylesheet" href="style.css">
-      <script src="script.js"></script>
+      <script src="RightFalse.js"></script>
 </head>
 <body>
-    <button><strong>1. Do the homework</strong></button>
-    <button><strong>2. Do the dinner</strong></button>
-    <button><strong>3. Go work</strong></button>
-    <button><strong>4. Go to sleep</strong></button>
+    <h1>Task list</h1>
+    <div class="button-container">
+        <button class="state-button" onclick="toggleState(this)">1. Do the homework</button>
+    </div>
+    <button class="state-button" onclick="toggleState1(this)"><strong>2. Do the dinner</strong></button>
+    <button class="state-button" onclick="toggleState2(this)"><strong>3. Go work</strong></button>
+    <button class="state-button" onclick="toggleState3(this)"><strong>4. Go to sleep</strong></button>
 </body>
 </html>

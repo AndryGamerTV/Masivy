@@ -5,18 +5,24 @@ body {
     background-color: #edd69c;
     font-size: 18px;
 }
+h1 {
+    color: #000000;
+    text-align: center !important;
+    font-size: 2em;
+    margin: 0.67em 0;
+    letter-spacing: 1px; /* Added letter spacing */
+}
 button {
     color: #000000;
-    text-align: center;
+    text-align: left;
     border: 2px solid rgb(99, 84, 76);
     transition: 0.5s;
     padding: 1em;
-    border-radius: 10px;
-    margin: 1em auto;
+    margin: 1em 0;
     width: 40%;
     background-color: #f0f0f0;
     border: 0.5px solid #515050;
-    border-radius: 40px;
+    border-radius: 20px;
     box-shadow: 2px 2px 2px #686868;
     font-size: 16px;
     display: block;
@@ -39,7 +45,7 @@ button {
     transform-origin: 50%;
     transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-button:after {
+/*button:after {
     content: '✔';
     position: absolute;
     right: -30px;
@@ -50,11 +56,11 @@ button:after {
     opacity: 0;
     transition: opacity 60s ease, visibility 60s 60s;
     visibility: hidden;
-}
+}*/
 button:hover {
     border: 2px solid rgb(0, 0, 0);
     background: rgb(255, 255, 255);
-    transform: translateX(5px) translateY(5px) rotate(-3deg);
+    transform: translateX(20px); /* Move the button to the right */
 }
 button:active {
     background-color: rgb(202, 227, 228);
@@ -67,3 +73,29 @@ button:active:after {
     visibility: visible;
     transition: opacity 0.2s ease;
 }
+button {
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+button.green {
+    background-color: green;
+    transition: background-color 3s ease;
+    transition: transform 200ms cubic-bezier(0.17, 0.61, 0.54, 0.9);
+}
+
+button.red {
+    background-color: red;
+    transition: background-color 3s ease;
+    transition: transform 200ms cubic-bezier(0.17, 0.61, 0.54, 0.9);
+}
+
+button:focus {
+    outline: none;
+}
+/*.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}*/
