@@ -2,16 +2,88 @@ body {
     font-family: Arial, sans-serif;
     margin: 10px;
     padding: 2px;
-    background-color: #edd69c;
+    background-color: #bebebe;
     font-size: 18px;
 }
 h1 {
-    color: #000000;
-    text-align: center !important;
-    font-size: 2em;
-    margin: 0.67em 0;
-    letter-spacing: 1px; /* Added letter spacing */
-}
+    --color-one: hsl(22, 77%, 61%);
+    --color-two: hsl(59, 100%, 62%);
+    --stretch-multiplier: 5;
+    font-size: clamp(3rem, 6vmin, 4rem);
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    display: grid;
+    line-height: 1;
+    align-items: center;
+  }
+  
+  
+  
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;  
+  }
+  
+  
+  
+  [aria-hidden] {
+    display: flex;
+    gap: 0.02ch;
+    align-items: center;
+    color: black;
+  }
+  
+  
+  .stretch-o {
+    height: 1.12ch;
+    width: calc(var(--stretch) * 1.16ch);
+    translate: 0 -0.01ch;
+    border: 0.25ch solid black;
+    border-radius: 1ch;
+    transition: width 0.2s;
+    position: relative;
+  }
+  
+  h1 {
+    --stretch: 1;
+  }
+  
+  h1:hover {
+    --stretch: var(--stretch-multiplier);
+  }
+  
+  
+  .stretch-o:after,
+  .stretch-o:before {
+    content: "";
+    border: 0.25ch solid var(--color);
+    position: absolute;
+    inset: -0.25ch;
+    border-radius: 1ch;
+    opacity: calc(-1 + var(--stretch));
+    transition: opacity 0.2s;
+  }
+  
+  .stretch-o:before {
+    --color: var(--color-one);
+  }
+  
+  .stretch-o:after {
+    --color: var(--color-two);
+    mask:
+      radial-gradient(
+        circle at top left,
+        black,
+        transparent
+      );
+  }
 button {
     color: #000000;
     text-align: left;
@@ -44,6 +116,7 @@ button {
     stroke-dashoffset: -20;
     transform-origin: 50%;
     transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-left: 10px; /* Adjust this value as needed */
 }
 /*button:after {
     content: '✔';
@@ -91,11 +164,11 @@ button.red {
     transition: transform 200ms cubic-bezier(0.17, 0.61, 0.54, 0.9);
 }
 
+button.white {
+    background-color: white;
+    color: black;
+}
+
 button:focus {
     outline: none;
 }
-/*.button-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}*/
