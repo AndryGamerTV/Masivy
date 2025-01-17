@@ -132,30 +132,19 @@ button {
     stroke-dashoffset: -20;
     transform-origin: 50%;
     transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
-    margin-left: 20px; /* Adjust this value as needed */
+    margin-left: 20px;
 }
-/*button:after {
-    content: '✔';
-    position: absolute;
-    right: -30px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 18px;
-    color: green;
-    opacity: 0;
-    transition: opacity 60s ease, visibility 60s 60s;
-    visibility: hidden;
-}*/
 button:hover {
     border: 2px solid rgb(0, 0, 0);
     background: rgb(255, 255, 255);
-    transform: translateX(20px); /* Move the button to the right */
+    transform: translateX(20px);
 }
 button:active {
     background-color: rgb(202, 227, 228);
-    transform: translateY(4px);
     transition: 0.001s;
-    transform: translateX(5px) translateY(5px) rotate(-3deg);
+    transform: scale(0.95);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    filter: blur(1px);
 }
 button:active:after {
     opacity: 1;
