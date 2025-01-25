@@ -12,15 +12,13 @@ h1 {
     font-size: clamp(3rem, 6vmin, 4rem);
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
-    display: grid;
+    display: position;
+    /*display: flex;*/
     line-height: 1;
     align-items: center;
     animation: textAnimation 2s ease-in-out;
-    text-align: center;
+    text-align: left;
   }
-  
-  
-  
   .sr-only {
     position: absolute;
     width: 1px;
