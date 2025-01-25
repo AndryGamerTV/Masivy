@@ -1,0 +1,26 @@
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# Local History for Visual Studio Code
+.history/
+
+# Built Visual Studio Code Extensions
+*.vsix
+
+# Ignore specific folder
+
+
+# Ignore specific file
+announcements.js
+arrayOperations.js
+arrayProperties.js
+example.js
+ez_calc.js
+maxSubSum.js
+n.js
+Operations_with_arrays.js
+tasks.js
