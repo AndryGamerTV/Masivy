@@ -10,10 +10,7 @@
 
 # Built Visual Studio Code Extensions
 *.vsix
-
-# Ignore specific folder
-
-
+*.gitignore
 # Ignore specific file
 announcements.js
 arrayOperations.js
