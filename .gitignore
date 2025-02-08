@@ -5,12 +5,13 @@
 !.vscode/extensions.json
 !.vscode/*.code-snippets
 
+# Built Visual Studio Code Extensions
+
+
 # Local History for Visual Studio Code
 .history/
+.gitignore
 
-# Built Visual Studio Code Extensions
-*.vsix
-*.gitignore
 # Ignore specific file
 announcements.js
 arrayOperations.js
